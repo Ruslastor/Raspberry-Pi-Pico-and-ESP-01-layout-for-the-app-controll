@@ -9,14 +9,16 @@
     <th>ESP-01</th>
   </tr>
   <tr>
-    <td><img src="images_rpi_esp/rpi_pico.jpg" width="100" alt="RPI Pico"/></td>
-    <td><img src="images_rpi_esp/esp01.jpg" width="100" alt="ESP-01"/></td>
+    <td><img src="images_rpi_esp/rpi_pico.jpg" width="200" alt="RPI Pico"/></td>
+    <td><img src="images_rpi_esp/esp01.jpg" width="200" alt="ESP-01"/></td>
   </tr>
 </table>
 
 <p>The circuit board was designed for making projects with such a hybrid. To make it able to detach the raspberry pi and the esp. Connection is established by the goldpins. 
-The RGB diode, near the ESP, used for indication of the ESP status:</p>
+
 <img src="images_rpi_esp/board.jpeg" alt="Board outlook"/>
+
+The RGB diode, near the ESP, used for indication of the ESP status:</p>
 <ul>
   <li>blue - SoftAP mode</li>
   <li>blinking blue - connecting to wi-fi</li>

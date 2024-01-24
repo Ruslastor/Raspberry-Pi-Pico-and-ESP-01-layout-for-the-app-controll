@@ -26,3 +26,7 @@
   <li>red - failed to connect to wi-fi</li>
 </ul>
 <p>Also, there is there are 2 buck step-down converters. Their outputs are connected to the powerlines on the right side (5 volt line is bigger). The first converter's feedback resistance is configured in the way, that it outputs the 3.3V. The second converter is configured to output 5 volts(only of there is an additional external power supply, which has greater than 5 volts voltage). If there is no need for additional power supply</p>
+
+<h2>Project applications</h2>
+<p>One of the project applications was to make a full-duplex transferring protocol, on the base ob TCP transfering protocol, to connect the raspberry pi pico to devices, acting like a TCP servers, and to control the raspberry pi pico through the desktop or a phone app.</p>
+<p>To do the app, I used a Godot4 game engine, which allows to export the same project for different platforms, and also has an ability to manipulate on TCP connection manually. To use this kind of connection, I wrote the ESP plugin for the egine.</p>

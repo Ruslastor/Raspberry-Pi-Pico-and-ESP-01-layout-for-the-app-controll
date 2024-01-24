@@ -10,3 +10,4 @@ The RGB diode, near the ESP, used for indication of the ESP status:</p>
   <li>green - connected to wi-fi</li>
   <li>red - failed to connect to wi-fi</li>
 </ul>
+<p>Also, there is there are 2 buck step-down converters. The first converter's feedback resistance is configured in the way, that it outputs the 3.3V. The second converter is configured to output 5 volts(only of there is an additional external power supply, which has greater than 5 volts voltage). If there is no need for additional power supply</p>

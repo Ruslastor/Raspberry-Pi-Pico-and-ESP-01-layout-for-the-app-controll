@@ -80,7 +80,8 @@ class ESPSocket:
         self.uart_send('AT+CIPSTART="TCP","'+ self.tcp_server_ip +'",'+ str(self.tcp_server_port) +'\r\n', relax_time=1000)
         
         
-    def send(self, data):
+    def send(self, command, data):
+        data = command + "|"+data
         if data != self.last_sent_data:
             self.uart.write(('AT+CIPSEND='+str(len(data))+'\r\n').encode('utf-8'))
             utime.sleep_ms(150)
@@ -96,7 +97,8 @@ class ESPSocket:
         if data:
             data = data.decode('utf-8')
             if 'IPD' in data:
-                return data.split(':')[-1][:-2]
+                read_data = data.split(':')[-1][:-2].split('|')
+                return read_data[0], read_data[1]
         return None
     def read_via_command(self):
         data = self.uart.write('AT+CIPRECVDATA=100')

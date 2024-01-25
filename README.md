@@ -1,5 +1,7 @@
 <h1>Raspberry Pi Pico and ESP-01 layout for the app controll project</h1>
-<p>This small project aimed to establish the Internet connection for Raspberry Pi Pico (like its W version), to make a device, that can be controlled from an external app on a desktop or mobile. To implement this I used the ESP-01 module with ESP-8266 microcontroller. The communication is done via the UART interface and AT commands. The <b>espsocketlib.py</b> implements a class, that is used to configure the esp device through the UART and to use it for example like a SoftAP (wi-fi hotspot) with a given SSID and password. Also, it can connect to existing hotspots. All these features are implemented, to obtain data transferring by the use of TCP protocol, with a command and the data to be processed(in the class the command and the data are merged in a single string, which will be transferred).</p>
+<p>This small project aimed to establish the Internet connection for Raspberry Pi Pico (like its W version), to make a device, that can be controlled from an external app on a desktop or mobile.</p>
+
+<p>To implement this I used the ESP-01 module with ESP-8266 microcontroller. The communication is done via the UART interface and AT commands. The <b>espsocketlib.py</b> implements a class, that is used to configure the esp device through the UART and to use it for example like a SoftAP (wi-fi hotspot) with a given SSID and password. Also, it can connect to existing hotspots. All these features are implemented, to obtain data transferring by the use of TCP protocol, with a command and the data to be processed(in the class the command and the data are merged in a single string, which will be transferred).</p>
 
 <h2>The board circuitry</h2>
 
